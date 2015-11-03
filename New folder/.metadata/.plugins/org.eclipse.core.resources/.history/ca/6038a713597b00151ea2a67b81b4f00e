@@ -1,0 +1,49 @@
+import com.mongodb.BasicDBObject;
+import com.mongodb.BulkWriteOperation;
+import com.mongodb.BulkWriteResult;
+import com.mongodb.Cursor;
+import com.mongodb.DB;
+import com.mongodb.DBCollection;
+import com.mongodb.DBCursor;
+import com.mongodb.DBObject;
+import com.mongodb.MongoClient;
+import com.mongodb.MongoCredential;
+import com.mongodb.ParallelScanOptions;
+import com.mongodb.ServerAddress;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Set;
+
+import static java.util.concurrent.TimeUnit.SECONDS;
+
+import java.net.UnknownHostException;
+public class Java_sucks{
+	public static void main(String[] args)
+	{
+		MongoClient mongoClient = null;
+		String database_name = "m3";
+		String collection_name = "raw_datas";
+
+		//Connect to the Server
+		try{
+			
+			mongoClient = new MongoClient();
+			
+		} catch (UnknownHostException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+			//Get Database
+			DB db = mongoClient.getDB(database_name);
+			
+			//Get The Desired Collection
+			DBCollection coll = db.getCollection(collection_name);
+			query = new BasicDBObject("processed", false);
+			System.out.println(coll.getCount());
+			
+			mongoClient.close();
+			
+		
+		
+	}
+}
