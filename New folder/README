@@ -2,7 +2,7 @@ This is Jacob's Readme for Java_sucks
 
 It's commented so just read it
 
-The code is within AiFunStuff/New folder/MongoDB/src/Java_sucks.java
+The code is within AiFunStuff/New folder/MongoDB/src/Javacode.java
 The necessary jars are mongo-java-driver-2.13.3.jar and weka.jar
 The Models are located within AiFunStuff/Models/
 
