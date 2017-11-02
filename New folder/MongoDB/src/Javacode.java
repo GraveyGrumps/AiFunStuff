@@ -108,7 +108,7 @@ public class Java_sucks{
 					    * 
 					    * 
 					    * 
-					    *  UNCOMMENT THE NEXT FUCKING LINE YOU PRICK!
+					    *  UNCOMMENT THE NEXT  LINE
 					    *  
 					    *  
 					    *  
@@ -118,7 +118,7 @@ public class Java_sucks{
 					   //coll.update(current_loc,new BasicDBObject("$set", new BasicDBObject("processed", true)));
 					   //Extract Email Address and Date_Created fields so we can update the data collection at the end
 					   String Email_Address = (String)current_loc.get("email");
-					   //Now that we have the Email Address we need to find the patients weight so we can laugh it it
+					   //Now that we have the Email Address we need to find the patients weight
 					   int Weight = (int)db.getCollection("patients").findOne(new BasicDBObject("email", Email_Address),new BasicDBObject("weight",1).append("_id", 0)).get("weight");
 					   String Date_Created = (String)current_loc.get("created");
 					   //System.out.println(Date_Created);
